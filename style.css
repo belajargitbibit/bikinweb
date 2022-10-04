@@ -1,0 +1,25 @@
+.wrapper {
+   background-color: red; 
+}
+.container {
+    width: 1200px;
+    margin: auto;
+
+}
+.sidebar{
+    width: 300px;
+    height: 600px;
+    background: red;
+    float: left;
+}
+.content{
+    width: 900px;
+    height: 600px;
+    background: blue;
+    float: right;
+
+}
+
+.clear{
+    clear: both;
+}
