@@ -1,23 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wrapper and Container</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-
+    <!-- <link rel="stylesheet" href="style.css"/> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <div id="header" class="wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="asset/logo stimata.PNG" alt="" width="24" height="30" class="d-inline-block align-text-top">
+              STIMATA
+            </a>
+          </div>
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tentang.html">tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Kontak.html">Kontak</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="asset/slide1.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="asset/slide2.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="asset/slide3.jpg" class="d-block w-100" alt="">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="mb-4">
+
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="asset/artikel1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dota 2</h5>
+              <p class="card-text">Game MOBA yang bisa dimainkan di pc/laptop</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="asset/artikel2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pro Evolution Soccer</h5>
+              <p class="card-text">Game bertemakan sepak bola</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="asset/artikel3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mobile Legend</h5>
+              <p class="card-text">Game MOBA yang dimainkan di hp android/iphone</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- <div id="header" class="wrapper"> -->
         <div class="container">
 
             <div id="logo">
                 <img src="logo stimata.PNG" alt="">
             </div>
             
-            <div id="menu">
+            <div class="text-center" id="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="tentang.html">Tentang</a></li>
@@ -38,44 +131,39 @@
                     <h2>Terbaru</h2>
                 
                     <ul>
-                        <li><a href="#"> Bermain Game Tanpa Mengesampingkan Edukasi </a></li>
-                        <li><a href="#"> Perkembangan E-sports Di Indonesia </a></li>
+                        <li><a href="#">Artikel</a></li>
+                        <li><a href="#">Tutorial</a></li>
                     </ul>
                 </div>
                 </div>
                     <div class="content">
                         <div class="blog-content">
                             <div class="image-box">
-                                <img src="esport kampus.jpg" alt="">
+                                <img src="asset/esport kampus.jpg" alt="">
                         
                             </div>
                         
                             <div class="text-box">
                         
-                                <h2>Bermain Game Tanpa Mengesampingkan Edukasi</h2>
+                                <h2>TENTANG E-Sports</h2>
                         
                                 <p>
-                                    Gebrakan esports terhadap dunia perkampusan mulai ramai beberapa tahun belakangan. Tahun 2019
-                                    lalu, ada dua turnamen resmi yang digelar khusus untuk ranah kampus yakni, Indonesia Esports
-                                    League (IEL) University dan PUBG Mobile Campus Championship (PMCC). Dikutip dari web
-                                    resminya, Tencent games selaku publisher PUBG Mobile mengharapkan turnamen ini dapat
-                                    memfasilitasi dan memberi kesempatan bagi mahasiswa untuk berkarier di dunia esports.
+                                    E-Sport kini sangat digemari oleh semua kalangan. Baik remaja maupun sampai dewasa. Dari game petualangan sampai strategi perang diminati oleh mereka. Tak hanya bermain untuk kesenangan sendiri, banyak juga yang sengaja mengikuti kompetisi untuk menambah skill dan pengalaman.
+                                   
                                 </p>
                         
                                 <a href="#">Read more</a>
                                 <div class="image-box">
-                                    <img src="perkembangan esport.jpg" alt="">
+                                    <img src="asset/perkembangan esport.jpg" alt="">
                             
                                 </div>
                             
                                 <div class="text-box">
                             
-                                    <h2>Perkembangan E-sports Di Indonesia</h2>
+                                    <h2>Liga E-Sports antar kampus</h2>
                             
                                     <p>
-                                        Game online sudah cukup lama dikenal masyarakat seiring dengan perkembangan internet di Indonesia.
-                                        Kamu pasti sudah tahu kan bahwa lewat game online, orang-orang bisa bermain bersama meskipun berada di tempat yang berbeda-beda karena terhubung oleh internet. 
-                                        Lalu kapan sebenarnya kompetisi esports mulai populer di Indonesia?.
+                                        Terbaru, ada Liga Esport IEL University Super Series Season 3. IEL University Super Series didukung Super Soccer sebagai Official Main Sponsor telah memulai season ke-tiga nya dengan total 32 kampus. 
                                     </p>
                             
                                     <a href="#">Read more</a>
@@ -87,8 +175,11 @@
             <div class="clear"></div>
         </div>
     </div>
-</body>
+
+
 <footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </footer>
+</footer>
+
+</body>
 </html>
